@@ -34,54 +34,50 @@ export class DataService {
     {
       id: 2,
       countryId: 1,
-      name: 'Guerrero'
-    },
-    {
-      id: 3,
-      countryId: 1,
       name: 'Ciudad de México'
     },
     {
-      id: 4,
+      id: 3,
       countryId: 2,
       name: 'Cali'
     },
     {
-      id: 5,
+      id: 4,
       countryId: 2,
       name: 'Medellin'
     },
     {
-      id: 6,
+      id: 5,
       countryId: 3,
       name: 'Sau Pablo'
     },
     {
-      id: 7,
+      id: 6,
       countryId: 3,
       name: 'Brazilia'
     },
     {
-      id: 8,
+      id: 7,
       countryId: 4,
       name: 'Los Angeles'
     },
     {
-      id: 9,
+      id: 8,
       countryId: 4,
       name: 'Texas'
     },
     {
-      id: 10,
+      id: 9,
       countryId: 5,
       name: 'Sebilla'
     },
     {
-      id: 11,
+      id: 10,
       countryId: 5,
       name: 'Madrid'
     }
   ];
+  
   getCountries(): CountryI[]{
     return this.countries;
   }

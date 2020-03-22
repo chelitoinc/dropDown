@@ -16,7 +16,12 @@ export class FormComponent implements OnInit {
   constructor(private dataSvc: DataService) { }
 
   ngOnInit(): void {
-    this.countries= this.dataSvc.getCountries();
+    this.countries = this.dataSvc.getCountries();
+  }
+
+  onSelect(id:number):void{
+    // this.cities = this.dataSvc.getCities().filter(item => item.countryId = id);
+    this.cities = this.dataSvc.getCities().filter(item => item.countryId == id);
   }
 
 }
